@@ -493,7 +493,7 @@ body {
   color: var(--primary-white-color);
 }
 
-.container.footer {
+.footer__container {
   display: flex;
 }
 
