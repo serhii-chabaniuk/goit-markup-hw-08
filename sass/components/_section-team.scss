@@ -1,0 +1,94 @@
+.team {
+  padding: 94px 0px;
+  background-color: #f5f4fa;
+  &__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  &__item:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+  &__item {
+    padding-bottom: 30px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: var(--primary-white-color);
+  }
+  &__name {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--title-text-color);
+  }
+  &__occupation {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+}
+
+.social-networks {
+  list-style-type: none;
+  display: flex;
+  padding: 0px;
+  margin-top: 16px;
+  margin-bottom: 0px;
+  justify-content: center;
+  align-content: center;
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  &__link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+  }
+  &__icon {
+    fill: #afb1b8;
+    border-radius: 50%;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &--instagram:hover > .social-networks__icon,
+  &--instagram:focus > .social-networks__icon {
+    fill: #fff;
+    background-color: var(--accent-color);
+  }
+  &--twitter:hover > .social-networks__icon,
+  &--twitter:focus > .social-networks__icon {
+    fill: #fff;
+    background-color: var(--accent-color);
+  }
+  &--facebook:hover > .social-networks__icon,
+  &--facebook:focus > .social-networks__icon {
+    fill: #fff;
+    background-color: var(--accent-color);
+  }
+  &--linkedin:hover > .social-networks__icon,
+  &--linkedin:focus > .social-networks__icon {
+    fill: #fff;
+    background-color: var(--accent-color);
+  }
+}
