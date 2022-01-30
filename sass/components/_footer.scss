@@ -8,10 +8,14 @@
   &__logo--accent-color {
     color: var(--primary-white-color);
   }
-}
-
-.footer__container {
-  display: flex;
+  &__contact-list {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &-social-networks {
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }
 
 .address {
@@ -56,10 +60,6 @@
   margin-top: 20px;
 }
 
-.footer-social-networks {
-  margin-left: 70px;
-}
-
 .join-title {
   margin-top: 12px;
   margin-bottom: 0px;
@@ -80,7 +80,6 @@
 /* ---------------------------------------------------------- */
 
 .subscription {
-  margin-left: 93px;
   &__label {
     margin-top: 12px;
     display: inline-block;
@@ -151,5 +150,31 @@
   &:hover + .subscription__icon-send,
   &:focus + .subscription__icon-send {
     fill: var(--title-text-color);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .footer__container {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .footer__container {
+    display: flex;
+  }
+  .footer-social-networks {
+    margin-left: 70px;
+  }
+  .subscription {
+    margin-left: 93px;
+  }
+  .footer__contact-list {
+    text-align: start;
+    margin-bottom: 0px;
+  }
+  .footer-social-networks {
+    text-align: start;
+    margin-bottom: 0px;
   }
 }

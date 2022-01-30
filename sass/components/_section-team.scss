@@ -1,33 +1,32 @@
 .team {
-  padding: 94px 0px;
+  padding: 60px 0px;
   background-color: #f5f4fa;
   &__title {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
   }
   &__list {
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
     list-style-type: none;
   }
-  &__item:not(:nth-child(4n)) {
-    margin-right: 30px;
-  }
   &__item {
-    padding-bottom: 30px;
+    max-width: 450px;
+    padding-bottom: 24px;
     border-radius: 0 0 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: var(--primary-white-color);
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
   }
   &__name {
     margin-top: 30px;
@@ -90,5 +89,52 @@
   &--linkedin:focus > .social-networks__icon {
     fill: #fff;
     background-color: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .team__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+  .team__item {
+    max-width: 354px;
+  }
+  .team__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .team__item:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .team {
+    padding: 94px 0px;
+  }
+  .team__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .team__item:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+  .team__item {
+    max-width: 270px;
+
+    padding-bottom: 30px;
+  }
+  .team__item:not(:last-child) {
+    margin-bottom: 0px;
   }
 }
