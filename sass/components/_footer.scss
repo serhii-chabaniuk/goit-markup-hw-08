@@ -81,7 +81,7 @@
 
 .subscription {
   &__label {
-    margin-top: 12px;
+    width: 100%;
     display: inline-block;
     font-weight: bold;
     font-size: 14px;
@@ -92,10 +92,9 @@
   }
   &__input {
     margin-top: 20px;
-    margin-right: 12px;
     padding-left: 16px;
     display: block;
-    width: 358px;
+    width: 100%;
     height: 50px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -114,6 +113,7 @@
   &__container-btn {
     position: relative;
     display: inline-block;
+    margin-top: 20px;
   }
   &__icon-send {
     position: absolute;
@@ -122,6 +122,9 @@
     transform: translateY(-50%);
     fill: var(--primary-white-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__form {
+    text-align: center;
   }
 }
 
@@ -176,5 +179,20 @@
   .footer-social-networks {
     text-align: start;
     margin-bottom: 0px;
+  }
+  .subscription__label {
+    margin-top: 12px;
+  }
+  .subscription__input {
+    margin-right: 12px;
+  }
+  .subscription__container-btn {
+    margin-top: 0px;
+  }
+  .subscription__form {
+    text-align: start;
+  }
+  .subscription__input {
+    width: 358px;
   }
 }
