@@ -377,11 +377,41 @@ body {
   margin: 0px auto;
   text-align: center;
   max-width: 480px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index-images/bg-desktop.jpg);
   background-color: #c4c4c4;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index-images/bg-mobile.jpg);
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .title {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index-images/bg-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index-images/bg-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .title {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index-images/bg-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index-images/bg-desktop.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .title {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index-images/bg-desktop@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -393,6 +423,7 @@ body {
 @media screen and (min-width: 1200px) {
   .title {
     max-width: 1600px;
+    padding: 200px 0px;
   }
 }
 
@@ -441,6 +472,12 @@ body {
 
 .advantage {
   padding: 60px 0px;
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage {
+    padding: 94px 0px;
+  }
 }
 
 .advantage__list {
@@ -588,6 +625,12 @@ body {
   background-color: #f5f4fa;
 }
 
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0px;
+  }
+}
+
 .team__title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -724,6 +767,12 @@ body {
   padding: 60px 0px;
 }
 
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0px;
+  }
+}
+
 .clients__title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -739,6 +788,7 @@ body {
   .clients__title {
     font-size: 36px;
     line-height: 1.16;
+    margin-bottom: 50px;
   }
 }
 
@@ -1021,7 +1071,13 @@ body {
 }
 
 .section-portfolio {
-  padding: 94px 0px;
+  padding: 60px 0px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-portfolio {
+    padding: 94px 0px;
+  }
 }
 
 .ul-filter {
