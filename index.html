@@ -23,7 +23,11 @@
     <header class="header">
         <div class="container header__container">
             <a class="logo header__logo" href="./index.html">Web<span class="header__logo--accent-color">Studio</span></a>
-            <button type="button" class="mobile-menu__button">=</button>
+            <button type="button" class="mobile-menu__button">
+                <svg class="mobile-menu__icon" style="width: 24px; height: 16px;">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a class="nav-link current" href="./index.html">Студия</a></li>
@@ -45,37 +49,38 @@
             </a>
         </div>
 
-
-
         <div class="mobile-menu is-hidden">
-                <button type="button" class="mobile-menu__close">X</button>
-                <nav class="mobile-menu__nav">
-                    <ul class="mobile-menu__list">
-                        <li class="mobile-menu__item"><a class="nav-link current" href="./index.html">Студия</a></li>
-                        <li class="mobile-menu__item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-                        <li class="mobile-menu__item"><a class="nav-link" href="">Контакты</a></li>
-                    </ul>
-                </nav>
-                <a class="mobile-menu__contact" href="tel:+380961111111">+38 096 111 11 11</a>
-                <a class="mobile-menu__contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <button type="button" class="mobile-menu__close">
+                <svg class="mobile-menu__icon-close" style="width: 19px; height: 19px;">
+                    <use href="./images/icons.svg#icon-close_menu"></use>
+                </svg>
+            </button>
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a class="mobile-menu__link current" href="./index.html">Студия</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu__container">
+                <a class="mobile-menu__contact-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="mobile-menu__contact-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 <ul class="mobile-social-networks">
                     <li class="mobile-social-networks__item">
-                        <a href="">Instagram</a>
+                        <a class="mobile-social-networks__link" href="">Instagram</a>
                     </li>
                     <li class="mobile-social-networks__item">
-                        <a href="">Twitter</a>
+                        <a class="mobile-social-networks__link" href="">Twitter</a>
                     </li>
                     <li class="mobile-social-networks__item">
-                        <a href="">Facebook</a>
+                        <a class="mobile-social-networks__link" href="">Facebook</a>
                     </li>
                     <li class="mobile-social-networks__item">
-                        <a href="">LinkedIn</a>
+                        <a class="mobile-social-networks__link" href="">LinkedIn</a>
                     </li>
                 </ul>
+            </div>
         </div>
-
-
-
 
     </header>
 
@@ -320,7 +325,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="list-clients">
+                    <li class="clients__item">
                         <a class="clients__link" href="">
                             <svg class="clients__logo" style="width: 106px; height: 60px;">
                                 <use href="./images/icons.svg#icon-logo-ctl"></use>
