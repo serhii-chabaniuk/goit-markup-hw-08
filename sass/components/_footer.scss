@@ -11,6 +11,9 @@
   &__contact-list {
     text-align: center;
     margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      margin-right: 165px;
+    }
   }
   &-social-networks {
     text-align: center;
@@ -126,6 +129,9 @@
   &__form {
     text-align: center;
   }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
 }
 
 .subscription__btn {
@@ -156,10 +162,16 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 // @media screen and (min-width: 481px) and (max-width: 768px) {
-//   .footer__container {
-//     display: flex;
-//   }
+//
 // }
 
 // @media screen and (min-width: 769px) {

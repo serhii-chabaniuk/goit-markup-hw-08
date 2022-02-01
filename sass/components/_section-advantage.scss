@@ -2,12 +2,23 @@
   padding: 60px 0px;
   &__list {
     list-style-type: none;
-    margin-top: 0;
+    margin-top: -30px;
+    margin-left: -15px;
+    margin-right: -15px;
     margin-bottom: 0;
     padding: 0;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
-  &__item:not(:last-child) {
-    margin-bottom: 30px;
+  &__item {
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    @media screen and (min-width: 768px) {
+      width: calc(100% / 2 - 30px);
+    }
   }
   &__item::before {
     display: block;
@@ -45,6 +56,9 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
   }
   &__text {
     font-size: 14px;
@@ -55,20 +69,10 @@
   }
 }
 
-// @media screen and (min-width: 481px) and (max-width: 768px) {
-//   .advantage__list {
-//     display: flex;
-//     flex-wrap: wrap;
-//   }
 //   .advantage__item:not(:nth-child(2n)) {
 //     margin-right: 30px;
 //   }
-//   .advantage__title {
-//     text-align: start;
-//   }
-//   .advantage__text {
-//     width: 354px;
-//   }
+//
 // }
 
 // @media screen and (min-width: 769px) {
