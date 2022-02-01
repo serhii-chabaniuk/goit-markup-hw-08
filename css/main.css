@@ -376,12 +376,24 @@ body {
   padding: 118px 0px;
   margin: 0px auto;
   text-align: center;
-  width: 100%;
+  max-width: 480px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-background.jpg);
   background-color: #c4c4c4;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    max-width: 1600px;
+  }
 }
 
 .title__hero {
